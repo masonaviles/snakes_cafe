@@ -1,5 +1,8 @@
 # snakes_cafe by Mason Aviles
 
+## Summary
+A Python script that simulates a POS order system
+
 ## Feature Tasks
 - When run, the program should print an intro message and the menu for the restaurant
 - The restaurant’s menu should include appetizers, entrees, desserts, and beverages.
