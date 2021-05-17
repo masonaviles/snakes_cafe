@@ -89,10 +89,14 @@ order = input("> ")
 
 while True:
     if order == "exit":
-        print(f"** Your complete order is {total_order_list} **")
+        print(f"** Your complete order is:
+        for item in total_order_list:
+            print(f"** {item}")
         break
     elif order == "done":
-        print(f"** Your complete order is {total_order_list} **")
+        print(f"** Your complete order is:
+        for item in total_order_list:
+            print(f"** {item}")
         break
     elif order not in items_in_stock: 
         print(f"** {order} isn't available **")
