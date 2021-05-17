@@ -89,12 +89,12 @@ order = input("> ")
 
 while True:
     if order == "exit":
-        print(f"** Your complete order is:
+        print(f"** Your complete order is:")
         for item in total_order_list:
             print(f"** {item}")
         break
     elif order == "done":
-        print(f"** Your complete order is:
+        print(f"** Your complete order is:")
         for item in total_order_list:
             print(f"** {item}")
         break
