@@ -79,20 +79,15 @@ print(""" """)
 
 print("""***********************************
 ** What would you like to order? **
+** 'exit' to end order           **
 ***********************************""")
 
-is_True = True
+total_order_list = []
+order = input("> ")
 
-while is_True:
-    order_list = []
+while order != "exit":
+    total_order_list.append(order)
     order = input("> ")
-    order = order.split(",")
-
     if order == "exit":
-        print(f"Thank you for shopping with us!")
-        break
-    elif order == "done":
-        print(f"Thank you for shopping with us!")
-        break
-    else:
-        print(f"{order} added to your order!")
+        print(f"Your complete order is {total_order_list}")
+        
