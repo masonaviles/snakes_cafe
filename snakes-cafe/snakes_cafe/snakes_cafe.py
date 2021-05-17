@@ -82,12 +82,22 @@ print("""***********************************
 ** 'exit' to end order           **
 ***********************************""")
 
+items_in_stock = ["wings", "cookies", "spring rolls", "salmon", "steak", "meat tornado", "a literal garden", "ice cream", "cake", "pie", "coffee", "tea", "unicorn tears"]
+
 total_order_list = []
 order = input("> ")
 
-while order != "exit":
-    total_order_list.append(order)
-    order = input("> ")
+while True:
     if order == "exit":
         print(f"Your complete order is {total_order_list}")
-        
+        break
+    elif order == "done":
+        print(f"Your complete order is {total_order_list}")
+        break
+    elif order not in items_in_stock: 
+        print(f"{order} isn't available")
+        order = input("> ")
+    else:
+        total_order_list.append(order)
+        print(f"{order} added to your order")
+        order = input("> ")
